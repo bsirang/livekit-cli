@@ -248,6 +248,7 @@ func publishReader(room *lksdk.Room, in io.ReadCloser, mime string, fps float64)
 			if pub != nil {
 				_ = room.LocalParticipant.UnpublishTrack(pub.SID())
 			}
+			os.Exit(0)
 		}),
 	}
 
