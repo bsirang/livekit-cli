@@ -157,6 +157,7 @@ func publishFile(room *lksdk.Room, filename string, fps float64) error {
 			if pub != nil {
 				_ = room.LocalParticipant.UnpublishTrack(pub.SID())
 			}
+			os.Exit(0)
 		}),
 	}
 
